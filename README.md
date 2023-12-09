@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# QUICKPAYAFRICA README
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+QuickPayAfrica QuickPayAfrica is an intuitive web app that connects African artisans with clients/customers thereby empowering small businesses and individuals in emerging economies and easily accept digital payments.
 
-## Available Scripts
+## How do I get set up?
 
-In the project directory, you can run:
+This project was bootstrapped using React (Create react app setup):
+Other dependencies include:
 
-### `npm start`
+- [Redux toolkit](https://redux-toolkit.js.org/tutorials/typescript)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Flexibull 2](https://www.npmjs.com/package/flexibull-2-0)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [Day.js](https://day.js.org/docs/en/installation/typescript)
 
-### `npm test`
+- [React Hook Form](https://react-hook-form.com/docs/usefieldarray)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [MUI](https://mui.com/material-ui/getting-started/)
 
-### `npm run build`
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [SWR for API calls](https://swr.vercel.app/docs/getting-started)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+React is moving away from styled-components, See the 'Future' section of this [article](https://github.com/reactwg/react-18/discussions/110)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Configuration
 
-### `npm run eject`
+After cloning the project locally:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# enter project directory
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+$ cd quickpayafrica
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#login to npm to access flexibull2 package
 
-## Learn More
+$ npm login
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# install dependencies
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+$ yarn
 
-### Code Splitting
+# run project
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+$ yarn dev
+#project runs on http://localhost:3001/
 
-### Analyzing the Bundle Size
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Dependencies
 
-### Making a Progressive Web App
+- Database configuration
+- How to run tests
+- Deployment instructions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Contribution guidelines
 
-### Advanced Configuration
+- Writing tests
+- Code review
+- Other guidelines
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Who do I talk to?
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Repo owner or admin
+- Other community or team contact
