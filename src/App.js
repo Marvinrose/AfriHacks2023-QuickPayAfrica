@@ -5,6 +5,7 @@ import Home from "./pages/home/index";
 import "./App.css";
 import SignIn from "./pages/account/components/signIn";
 import MiniDrawer from "./pages/layout";
+import Products from "./pages/products";
 
 // import "./index.css";
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="/createAccount" element={<Account />} />
         <Route path="/signIn" element={<SignIn />} />
         <Route path="/layout" element={<MiniDrawer />} />
+        <Route path="/products" element={<Products />} />
       </Routes>
     </Router>
   );

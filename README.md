@@ -11,7 +11,7 @@ Other dependencies include:
 
 - [Flexibull 2](https://www.npmjs.com/package/flexibull-2-0)
 
-- [Day.js](https://day.js.org/docs/en/installation/typescript)
+- [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 
 - [React Hook Form](https://react-hook-form.com/docs/usefieldarray)
 
