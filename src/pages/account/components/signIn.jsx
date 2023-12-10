@@ -1,6 +1,6 @@
 import * as React from "react";
-// import TextField from "@mui/material/TextField";
-// import { Button } from "@mui/material";
+import TextField from "@mui/material/TextField";
+import Button from "@mui/material/Button";
 
 const SignIn = () => {
   return (
@@ -10,29 +10,34 @@ const SignIn = () => {
           <h1 className=" mb-3">Sign In</h1>
           <p className="">Hi, welcome back, you have been missed </p>
 
-          <div class="form-floating mb-3">
-            <input
-              type="email"
-              className="form-control"
-              id="floatingInput"
-              placeholder="name@example.com"
-            />
-            <label for="floatingInput">Email address</label>
-          </div>
-          <div className="form-floating mb-3">
-            <input
-              type="password"
-              class="form-control"
-              id="floatingPassword"
-              placeholder="Password"
-            />
-            <label for="floatingPassword">Password</label>
-          </div>
+          <TextField
+            id="outlined-basic"
+            label="Name"
+            variant="outlined"
+            fullWidth
+            className="mb-3"
+          />
+          <TextField
+            id="outlined-basic"
+            label="Email"
+            variant="outlined"
+            fullWidth
+            className="mb-3"
+          />
+          <TextField
+            id="outlined-password-input"
+            label="Password"
+            type="password"
+            autoComplete="current-password"
+            fullWidth
+            className="mb-3"
+          />
 
           <div className="mb-3">
-            <button type="button" class="btn btn-primary form-control round">
+            {/* Use Button component from Material-UI */}
+            <Button variant="contained" color="primary" fullWidth>
               Sign In
-            </button>
+            </Button>
           </div>
         </div>
 

@@ -10,6 +10,15 @@ const Test = () => {
           <div className="col">
             <RecipeReviewCard></RecipeReviewCard>
           </div>
+          <div className="col">
+            <RecipeReviewCard></RecipeReviewCard>
+          </div>
+          <div className="col">
+            <RecipeReviewCard></RecipeReviewCard>
+          </div>
+          <div className="col">
+            <RecipeReviewCard></RecipeReviewCard>
+          </div>
         </div>
       </div>
       <div className="mb-5">
