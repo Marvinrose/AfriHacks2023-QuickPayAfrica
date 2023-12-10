@@ -6,6 +6,7 @@ import "./App.css";
 import SignIn from "./pages/account/components/signIn";
 import MiniDrawer from "./pages/layout";
 import Products from "./pages/products";
+import Test from "./pages/products/test";
 
 // import "./index.css";
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/signIn" element={<SignIn />} />
         <Route path="/layout" element={<MiniDrawer />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/test" element={<Test />} />
       </Routes>
     </Router>
   );
