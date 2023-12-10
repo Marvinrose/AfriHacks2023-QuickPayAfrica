@@ -4,6 +4,7 @@ import Account from "./pages/account/index";
 import Home from "./pages/home/index";
 import "./App.css";
 import SignIn from "./pages/account/components/signIn";
+import MiniDrawer from "./pages/layout";
 
 // import "./index.css";
 
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/createAccount" element={<Account />} />
         <Route path="/signIn" element={<SignIn />} />
+        <Route path="/layout" element={<MiniDrawer />} />
       </Routes>
     </Router>
   );
