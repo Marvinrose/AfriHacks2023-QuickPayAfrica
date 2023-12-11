@@ -26,8 +26,9 @@ function ToggleButtonExample() {
               checked={radioValue === radio.value}
               onChange={(e) => setRadioValue(e.currentTarget.value)}
               style={{
-                backgroundColor: radioValue === radio.value ? "brown" : "white",
-                color: radioValue === radio.value ? "white" : "brown",
+                backgroundColor:
+                  radioValue === radio.value ? "#703A32" : "#F0DAD3",
+                color: radioValue === radio.value ? "#F0DAD3" : "#703A32",
                 borderColor: "brown",
               }}
             >
