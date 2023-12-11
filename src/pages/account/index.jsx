@@ -44,7 +44,10 @@ const Account = () => {
         />
 
         <div className="mb-3">
-          <button type="button" class="btn btn-primary form-control round">
+          <button
+            type="button"
+            class="btn btn-primary btn-rounded form-control "
+          >
             Sign Up
           </button>
         </div>

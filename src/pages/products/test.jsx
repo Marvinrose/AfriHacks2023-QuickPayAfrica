@@ -1,4 +1,4 @@
-import RecipeReviewCard from "./components/card";
+import CustomArrows from "./components/slider";
 
 const Test = () => {
   return (
@@ -6,23 +6,15 @@ const Test = () => {
       <div className="mb-5">
         {" "}
         <h1 className="mb-4">Paintings</h1>
-        <div className="row">
-          <div className="col">
-            <RecipeReviewCard></RecipeReviewCard>
-          </div>
-          <div className="col">
-            <RecipeReviewCard></RecipeReviewCard>
-          </div>
-          <div className="col">
-            <RecipeReviewCard></RecipeReviewCard>
-          </div>
-          <div className="col">
-            <RecipeReviewCard></RecipeReviewCard>
-          </div>
-        </div>
+        <CustomArrows />
       </div>
       <div className="mb-5">
         <h1 className="mb-4">Weave</h1>
+        <CustomArrows />
+      </div>
+      <div className="mb-5">
+        <h1 className="mb-4">Tye & Dye</h1>
+        <CustomArrows />
       </div>
     </div>
   );
