@@ -21,3 +21,13 @@
 h1 {
   color: #703a32;
 }
+
+.button {
+  /* ... existing styles ... */
+  background-color: brown; /* Set button background color to brown */
+  color: white; /* Set button text color to white */
+  border-color: brown; /* Set button border color to brown */
+  padding: 100px; /* Increase padding to increase button size */
+  font-size: 30px;
+  font-weight: bold; /* Increase font size for better visibility */
+}

@@ -8,6 +8,7 @@ import MiniDrawer from "./pages/layout";
 import Products from "./pages/products";
 import Test from "./pages/products/test";
 import Fade from "./pages/products/components/description";
+import Type from "./pages/account/components/type";
 
 // import "./index.css";
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/products" element={<Products />} />
         <Route path="/test" element={<Test />} />
         <Route path="/ProductDescription" element={<Fade />} />
+        <Route path="/userType" element={<Type />} />
       </Routes>
     </Router>
   );
