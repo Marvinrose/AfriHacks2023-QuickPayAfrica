@@ -1,32 +1,27 @@
 import * as React from "react";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
+import okay from "./components/images/hero-img.png";
+import HomeLayout from "./components/homeLayout";
 
-export default function ButtonAppBar() {
+const Home = () => {
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
-        <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            News
-          </Typography>
-          <Button color="inherit">Login</Button>
-        </Toolbar>
-      </AppBar>
-    </Box>
+    <>
+      <HomeLayout />
+      <div className="container-fluid" style={{ marginTop: "120px" }}>
+        <h1 className="" style={{ color: "#172845" }}>
+          QuickpayAfrica:{" "}
+        </h1>
+        <h1 className="" style={{ color: "#172845" }}>
+          Your Destination for Authentic Wonders
+        </h1>
+
+        <p className="mb-0">Seamless Transactions, Unique Treasures:</p>
+        <p className="mb-5 mt-0"> Navigating Africa’s rich cultural heritage</p>
+      </div>{" "}
+      <div>
+        <img src={okay} className="img-fluid" height={300} width={1400} alt="" />
+      </div>
+      {/* </HomeLayout> */}
+    </>
   );
-}
+};
+export default Home;
