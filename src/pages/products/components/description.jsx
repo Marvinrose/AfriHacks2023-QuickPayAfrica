@@ -1,101 +1,113 @@
-import React, { Component } from "react";
-import Slider from "react-slick";
-
-export default class SimpleSlider extends Component {
-  render() {
-    const settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-    };
-    return (
-      <div>
-        <h2> Single Item</h2>
-        <Slider {...settings}>
-          <div>
-            <img
-              class=" img-fluid"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRrmPwTmkoqytwhZNFk2AqNk2BqhRP0NBeWA&usqp=CAU"
-              alt="First slide"
-            />
-          </div>
-          <div>
-            <h3>2</h3>
-          </div>
-          <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
-          </div>
-        </Slider>
-      </div>
-    );
-  }
-}
-
 // import React from "react";
 
 // const Description = () => {
 //   return (
-//     <div className="container mt-5 ">
+//     <>
 //       <div
-//         id="carouselExampleFade"
-//         class="carousel slide carousel-fade"
-//         data-ride="carousel"
+//         id="carouselExampleIndicators"
+//         className="carousel slide"
+//         data-coreui-ride="true"
 //       >
-//         <div class="carousel-inner">
-//           <div class="carousel-item active">
+//         <div className="carousel-indicators">
+//           <button
+//             type="button"
+//             data-coreui-target="#carouselExampleIndicators"
+//             data-coreui-slide-to="0"
+//             class="active"
+//             aria-current="true"
+//             aria-label="Slide 1"
+//           ></button>
+//           <button
+//             type="button"
+//             data-coreui-target="#carouselExampleIndicators"
+//             data-coreui-slide-to="1"
+//             aria-label="Slide 2"
+//           ></button>
+//           <button
+//             type="button"
+//             data-coreui-target="#carouselExampleIndicators"
+//             data-coreui-slide-to="2"
+//             aria-label="Slide 3"
+//           ></button>
+//         </div>
+//         <div className="carousel-inner">
+//           <div className="carousel-item active">
 //             <img
-//               class="d-block img-fluid"
-//               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRrmPwTmkoqytwhZNFk2AqNk2BqhRP0NBeWA&usqp=CAU"
-//               alt="First slide"
+//               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ2qs_bhOeNFa1ZMO2NFYXrd9jvcuFxEaGcw&usqp=CAU"
+//               className="d-block w-100"
+//               alt="..."
 //             />
 //           </div>
-//           <div class="carousel-item">
+//           <div className="carousel-item">
 //             <img
-//               class="d-block w-100 img-fluid"
-//               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxyY3snuIn16tLjHE2whNsX9syIERVJ9Uj2g&usqp=CAU"
-//               alt="Second slide"
+//               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ2qs_bhOeNFa1ZMO2NFYXrd9jvcuFxEaGcw&usqp=CAU"
+//               className="d-block w-100"
+//               alt="..."
 //             />
 //           </div>
-//           <div class="carousel-item">
+//           <div className="carousel-item">
 //             <img
-//               class="d-block w-100"
-//               src=".../800x400?auto=yes&bg=555&fg=333&text=Third slide"
-//               alt="Third slide"
+//               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ2qs_bhOeNFa1ZMO2NFYXrd9jvcuFxEaGcw&usqp=CAU"
+//               className="d-block w-100"
+//               alt="..."
 //             />
 //           </div>
 //         </div>
-//         <a
-//           class="carousel-control-prev"
-//           href="#carouselExampleFade"
-//           role="button"
-//           data-slide="prev"
+//         <button
+//           className="carousel-control-prev"
+//           type="button"
+//           data-coreui-target="#carouselExampleIndicators"
+//           data-coreui-slide="prev"
 //         >
-//           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-//           <span class="sr-only">Previous</span>
-//         </a>
-//         <a
-//           class="carousel-control-next"
-//           href="#carouselExampleFade"
-//           role="button"
-//           data-slide="next"
+//           <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+//           <span className="visually-hidden">Previous</span>
+//         </button>
+//         <button
+//           className="carousel-control-next"
+//           type="button"
+//           data-coreui-target="#carouselExampleIndicators"
+//           data-coreui-slide="next"
 //         >
-//           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-//           <span class="sr-only">Next</span>
-//         </a>
+//           <span className="carousel-control-next-icon" aria-hidden="true"></span>
+//           <span className="visually-hidden">Next</span>
+//         </button>
 //       </div>
-//     </div>
+//     </>
 //   );
 // };
-
 // export default Description;
+
+import Carousel from "react-bootstrap/Carousel";
+import ExampleCarouselImage from "components/ExampleCarouselImage";
+
+function UncontrolledExample() {
+  return (
+    <Carousel>
+      <Carousel.Item>
+        <ExampleCarouselImage text="First slide" />
+        <Carousel.Caption>
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <ExampleCarouselImage text="Second slide" />
+        <Carousel.Caption>
+          <h3>Second slide label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <ExampleCarouselImage text="Third slide" />
+        <Carousel.Caption>
+          <h3>Third slide label</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
+  );
+}
+
+export default UncontrolledExample;

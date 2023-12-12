@@ -1,7 +1,7 @@
 // Layout.js
 
 import React from "react";
-import MiniDrawer from "./components/sidebar";
+import ResponsiveAppBar from "./components/navbar";
 // import Home from "../home/index";
 // import { Home } from "@mui/icons-material";
 // import { Box } from "@mui/material";
@@ -9,7 +9,7 @@ import MiniDrawer from "./components/sidebar";
 const Layout = ({ children }) => {
   return (
     <div>
-      <MiniDrawer />
+      <ResponsiveAppBar />
 
       <main>{children}</main>
     </div>

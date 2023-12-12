@@ -1,14 +1,23 @@
 import * as React from "react";
 import { TextField } from "@mui/material";
+import Button from "@mui/material/Button";
 
 // import { Button } from "@mui/material";
 
 const Account = () => {
   return (
     <>
+      <div>
+        <h1
+          className=""
+          style={{ fontSize: "40px", marginTop: "50px", marginLeft: "20px" }}
+        >
+          QuickPayAfrica.
+        </h1>
+      </div>
       <div
         className="container text-center col-lg-6"
-        style={{ marginTop: "100px" }}
+        style={{ marginTop: "80px" }}
       >
         <h1 className=" mb-3">Create Account</h1>
         <p className="fo">Fill your information below </p>
@@ -44,12 +53,14 @@ const Account = () => {
         />
 
         <div className="mb-3">
-          <button
-            type="button"
-            class="btn btn-primary btn-rounded form-control "
+          {/* Use Button component from Material-UI */}
+          <Button
+            variant="contained"
+            fullWidth
+            style={{ backgroundColor: "#703a32" }}
           >
             Sign Up
-          </button>
+          </Button>
         </div>
         <div>
           <p>Already have an account? Sign in</p>

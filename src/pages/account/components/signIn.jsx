@@ -5,7 +5,15 @@ import Button from "@mui/material/Button";
 const SignIn = () => {
   return (
     <>
-      <div className="container col-lg-6" style={{ marginTop: "150px" }}>
+      <div>
+        <h1
+          className=""
+          style={{ fontSize: "40px", marginTop: "50px", marginLeft: "20px" }}
+        >
+          QuickPayAfrica.
+        </h1>
+      </div>
+      <div className="container col-lg-6" style={{ marginTop: "80px" }}>
         <div className="text-center ">
           <h1 className=" mb-3">Sign In</h1>
           <p className="">Hi, welcome back, you have been missed </p>
@@ -35,7 +43,11 @@ const SignIn = () => {
 
           <div className="mb-3">
             {/* Use Button component from Material-UI */}
-            <Button variant="contained" color="primary" fullWidth>
+            <Button
+              variant="contained"
+              fullWidth
+              style={{ backgroundColor: "#703a32" }}
+            >
               Sign In
             </Button>
           </div>
