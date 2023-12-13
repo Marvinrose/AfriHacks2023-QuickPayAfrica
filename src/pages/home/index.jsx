@@ -5,6 +5,8 @@ import Button from "@mui/material/Button";
 import GroupAvatars from "./components/avatarCollapse";
 import BasicCard from "./components/descCard";
 import Footer from "./components/footer";
+import MyComponent from "../icons/right-arrow";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -42,7 +44,19 @@ const Home = () => {
                   borderRadius: "14px",
                 }}
               >
-                Contained
+                <span style={{ paddingRight: "15px" }}>
+                  {" "}
+                  <Link
+                    to="/signIn"
+                    style={{ textDecoration: "none", color: "var(--white)" }}
+                  >
+                    {" "}
+                    Buyer{" "}
+                  </Link>{" "}
+                </span>
+                <span className="ml-2">
+                  <MyComponent />
+                </span>
               </Button>
               <Button
                 variant="outlined"
@@ -57,7 +71,19 @@ const Home = () => {
                   borderRadius: "14px",
                 }}
               >
-                Outlined
+                <span style={{ paddingRight: "15px" }}>
+                  {" "}
+                  <Link
+                    to="/signIn"
+                    style={{ textDecoration: "none", color: "var(--bg-color)" }}
+                  >
+                    {" "}
+                    Seller{" "}
+                  </Link>{" "}
+                </span>
+                <span className="ml-2">
+                  <MyComponent />
+                </span>
               </Button>
             </div>
           </div>
@@ -76,7 +102,7 @@ const Home = () => {
         >
           <GroupAvatars style={{ maxWidth: "100%", height: "auto" }} />
         </div>
-        <div className="" style={{ display: "flex", justifyContent: "center" }}>
+        <div className="mt-5" style={{ display: "flex", justifyContent: "center" }}>
           <BasicCard style={{ maxWidth: "600px" }} />
         </div>
       </div>{" "}

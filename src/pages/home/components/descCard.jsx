@@ -1,45 +1,65 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
 
-const bull = (
-  <Box
-    component="span"
-    sx={{ display: "inline-block", mx: "2px", transform: "scale(0.8)" }}
-  >
-    •
-  </Box>
-);
+import CardContent from "@mui/material/CardContent";
+
+import Typography from "@mui/material/Typography";
 
 export default function BasicCard() {
   return (
     <Card
       sx={{ maxWidth: 600 }}
-      style={{ background: "var(--bg-color)", maxWidth: "600px" }}
+      style={{
+        background: "#F0DAD3",
+        color: "#172845",
+        maxWidth: "500px",
+        padding: "15px",
+        borderRadius: "4PX",
+        borderBottomRightRadius: "20px",
+      }}
     >
       <CardContent>
-        <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-          Word of the Day
+        <Typography sx={{ fontSize: 14 }}>
+          Every product you find here is authentic and crafted with care by our
+          carefully vetted artisans and sellers. We have no room for copyright.
         </Typography>
-        <Typography variant="h5" component="div">
-          be{bull}nev{bull}o{bull}lent
-        </Typography>
-        <Typography sx={{ mb: 1.5 }} color="text.secondary">
-          adjective
-        </Typography>
-        <Typography variant="body2">
-          well meaning and kindly.
-          <br />
-          {'"a benevolent smile"'}
-        </Typography>
+        <div className="row mt-3">
+          <div className="col-4">
+            <h1 className="mb-0" style={{ fontSize: "28px" }}>
+              1,000+
+            </h1>
+            <p
+              className="mt-0"
+              style={{ fontSize: "16px", paddingLeft: "4px" }}
+            >
+              Users
+            </p>
+          </div>
+          <div className="col-4">
+            <h1 className="mb-0" style={{ fontSize: "28px" }}>
+              100+
+            </h1>
+            <p
+              className="mt-0"
+              style={{ fontSize: "16px", paddingLeft: "4px" }}
+            >
+              Reviews
+            </p>
+          </div>
+          <div className="col-4">
+            <h1 className="mb-0" style={{ fontSize: "28px" }}>
+              20+
+            </h1>
+            <p
+              className="mt-0"
+              style={{ fontSize: "16px", paddingLeft: "4px" }}
+            >
+              Hangouts
+            </p>
+          </div>
+        </div>
       </CardContent>
-      <CardActions>
-        <Button size="small">Learn More</Button>
-      </CardActions>
     </Card>
   );
 }

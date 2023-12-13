@@ -6,6 +6,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
+import { Link } from "react-router-dom";
 // import LOGO from "./images/Afrilogo.png";
 
 export default function ButtonAppBar() {
@@ -32,7 +33,13 @@ export default function ButtonAppBar() {
             <span style={{ fontFamily: "Montserrat" }}>QuickPayAfrica</span>
           </Typography>
           <Button style={{ fontFamily: " var(--font-famiy)" }} color="inherit">
-            Login
+            <Link
+              to="/signIn"
+              style={{ textDecoration: "none", color: "var(--white)" }}
+            >
+              {" "}
+              Login
+            </Link>
           </Button>
         </Toolbar>
       </AppBar>
