@@ -7,7 +7,7 @@ const Test = () => {
     <>
       {" "}
       <Layout />
-      <div className="container mt-5 " style={{ marginTop: "500px" }}>
+      <div className="container" style={{ marginTop: "100px" }}>
         <div className="mb-5">
           {" "}
           <h1 className="mb-4">Paintings</h1>
