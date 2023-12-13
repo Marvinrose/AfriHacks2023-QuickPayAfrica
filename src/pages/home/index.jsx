@@ -4,6 +4,7 @@ import HomeLayout from "./components/homeLayout";
 import Button from "@mui/material/Button";
 import GroupAvatars from "./components/avatarCollapse";
 import BasicCard from "./components/descCard";
+import Footer from "./components/footer";
 
 const Home = () => {
   return (
@@ -79,7 +80,7 @@ const Home = () => {
           <BasicCard style={{ maxWidth: "600px" }} />
         </div>
       </div>{" "}
-      {/* </HomeLayout> */}
+      <Footer />
     </>
   );
 };

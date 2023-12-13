@@ -1,23 +1,19 @@
 import * as React from "react";
+import { Link } from "react-router-dom";
 import { TextField } from "@mui/material";
 import Button from "@mui/material/Button";
+import ButtonAppBar from "../home/components/homeNav";
+import Footer from "../home/components/footer";
 
 // import { Button } from "@mui/material";
 
 const Account = () => {
   return (
     <>
-      <div>
-        <h1
-          className=""
-          style={{ fontSize: "40px", marginTop: "50px", marginLeft: "20px" }}
-        >
-          QuickPayAfrica.
-        </h1>
-      </div>
+      <ButtonAppBar />
       <div
         className="container text-center col-lg-6"
-        style={{ marginTop: "80px" }}
+        style={{ marginTop: "150px" }}
       >
         <h1 className=" mb-3">Create Account</h1>
         <p className="fo">Fill your information below </p>
@@ -63,9 +59,12 @@ const Account = () => {
           </Button>
         </div>
         <div>
-          <p>Already have an account? Sign in</p>
+          <p>
+            Already have an account? <Link to="/signIn">Sign in</Link>
+          </p>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

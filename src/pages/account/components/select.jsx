@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import ToggleButton from "react-bootstrap/ToggleButton";
@@ -32,7 +33,13 @@ function ToggleButtonExample() {
                 borderColor: "brown",
               }}
             >
-              {radio.name}
+              {" "}
+              <Link
+                to="/products"
+                style={{ color: "var(--white)", textDecoration: "none" }}
+              >
+                {radio.name}
+              </Link>
             </ToggleButton>
           ))}
         </ButtonGroup>

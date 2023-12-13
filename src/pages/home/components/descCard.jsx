@@ -17,7 +17,10 @@ const bull = (
 
 export default function BasicCard() {
   return (
-    <Card sx={{ maxWidth: 600 }} style={{ background: "var(--bg-color)" }}>
+    <Card
+      sx={{ maxWidth: 600 }}
+      style={{ background: "var(--bg-color)", maxWidth: "600px" }}
+    >
       <CardContent>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
           Word of the Day

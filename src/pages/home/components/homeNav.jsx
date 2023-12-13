@@ -29,9 +29,11 @@ export default function ButtonAppBar() {
 
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             <img className="img-fluid " src={LOGO} alt="" width={30} />{" "}
-            <span>QuickPayAfrica</span>
+            <span style={{ fontFamily: "Montserrat" }}>QuickPayAfrica</span>
           </Typography>
-          <Button color="inherit">Login</Button>
+          <Button style={{ fontFamily: " var(--font-famiy)" }} color="inherit">
+            Login
+          </Button>
         </Toolbar>
       </AppBar>
     </Box>
