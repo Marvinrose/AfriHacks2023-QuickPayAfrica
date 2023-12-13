@@ -60,7 +60,7 @@ const Account = () => {
         </div>
         <div>
           <p>
-            Already have an account? <Link to="/signIn">Sign in</Link>
+            Already have an account? <Link to="/userType">Sign in</Link>
           </p>
         </div>
       </div>

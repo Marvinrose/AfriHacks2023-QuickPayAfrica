@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import ToggleButton from "react-bootstrap/ToggleButton";
+import MyComponent from "../../icons/right-arrow";
 
 function ToggleButtonExample() {
   const [radioValue, setRadioValue] = useState("1");
@@ -38,7 +39,16 @@ function ToggleButtonExample() {
                 to="/products"
                 style={{ color: "var(--white)", textDecoration: "none" }}
               >
-                {radio.name}
+                <span style={{ paddingRight: "15px" }}>
+                  {" "}
+                  <Link
+                    to="/signIn"
+                    style={{ textDecoration: "none", color: "var(--white)" }}
+                  >
+                    {" "}
+                    {radio.name} <MyComponent />
+                  </Link>{" "}
+                </span>
               </Link>
             </ToggleButton>
           ))}

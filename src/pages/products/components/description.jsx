@@ -1,113 +1,35 @@
-// import React from "react";
+import React from "react";
 
-// const Description = () => {
-//   return (
-//     <>
-//       <div
-//         id="carouselExampleIndicators"
-//         className="carousel slide"
-//         data-coreui-ride="true"
-//       >
-//         <div className="carousel-indicators">
-//           <button
-//             type="button"
-//             data-coreui-target="#carouselExampleIndicators"
-//             data-coreui-slide-to="0"
-//             class="active"
-//             aria-current="true"
-//             aria-label="Slide 1"
-//           ></button>
-//           <button
-//             type="button"
-//             data-coreui-target="#carouselExampleIndicators"
-//             data-coreui-slide-to="1"
-//             aria-label="Slide 2"
-//           ></button>
-//           <button
-//             type="button"
-//             data-coreui-target="#carouselExampleIndicators"
-//             data-coreui-slide-to="2"
-//             aria-label="Slide 3"
-//           ></button>
-//         </div>
-//         <div className="carousel-inner">
-//           <div className="carousel-item active">
-//             <img
-//               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ2qs_bhOeNFa1ZMO2NFYXrd9jvcuFxEaGcw&usqp=CAU"
-//               className="d-block w-100"
-//               alt="..."
-//             />
-//           </div>
-//           <div className="carousel-item">
-//             <img
-//               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ2qs_bhOeNFa1ZMO2NFYXrd9jvcuFxEaGcw&usqp=CAU"
-//               className="d-block w-100"
-//               alt="..."
-//             />
-//           </div>
-//           <div className="carousel-item">
-//             <img
-//               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ2qs_bhOeNFa1ZMO2NFYXrd9jvcuFxEaGcw&usqp=CAU"
-//               className="d-block w-100"
-//               alt="..."
-//             />
-//           </div>
-//         </div>
-//         <button
-//           className="carousel-control-prev"
-//           type="button"
-//           data-coreui-target="#carouselExampleIndicators"
-//           data-coreui-slide="prev"
-//         >
-//           <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-//           <span className="visually-hidden">Previous</span>
-//         </button>
-//         <button
-//           className="carousel-control-next"
-//           type="button"
-//           data-coreui-target="#carouselExampleIndicators"
-//           data-coreui-slide="next"
-//         >
-//           <span className="carousel-control-next-icon" aria-hidden="true"></span>
-//           <span className="visually-hidden">Next</span>
-//         </button>
-//       </div>
-//     </>
-//   );
-// };
-// export default Description;
-
-import Carousel from "react-bootstrap/Carousel";
-import ExampleCarouselImage from "components/ExampleCarouselImage";
-
-function UncontrolledExample() {
+const Description = () => {
   return (
-    <Carousel>
-      <Carousel.Item>
-        <ExampleCarouselImage text="First slide" />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <ExampleCarouselImage text="Second slide" />
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <ExampleCarouselImage text="Third slide" />
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
+    <>
+      <div className="container mt-3">
+        <h1 className="" style={{ fontSize: "30px" }}>
+          Ntooilo . Earthenwares
+        </h1>
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <h2 style={{ fontSize: "25px" }}>300 reviews 4.8</h2>
+          <h2
+            style={{
+              fontWeight: "bold",
+              color: "var(--bg-color)",
+              fontSize: "25px",
+            }}
+          >
+            $75
+          </h2>
+        </div>
+        <div className="mt-5">
+          <h2 style={{ fontSize: "25px" }}>Description</h2>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            This is an earthen ware made out of pure south african clay. It
+            carries in it a precious decendency of over 400 yrs with the people
+            of Nbutu cheering its culture forever.{" "}
           </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
+        </div>
+      </div>
+    </>
   );
-}
+};
 
-export default UncontrolledExample;
+export default Description;

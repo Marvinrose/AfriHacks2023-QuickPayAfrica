@@ -45,7 +45,7 @@ const SignIn = () => {
               style={{ backgroundColor: "#703a32" }}
             >
               <Link
-                to="/userType"
+                to="/products"
                 style={{ color: "var(--white)", textDecoration: "none" }}
               >
                 Sign in

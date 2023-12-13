@@ -41,9 +41,29 @@ export default function RecipeReviewCard() {
           </IconButton>
         }
         title="Ntooilo . Earthenwares"
-        subheader="Mathew Nathan, South africa "
-        header="Mathew Nathan, South africa "
+        subheader={
+          <>
+            Mathew Nathan, South Africa
+            <div>
+              <Typography variant="body2" color="var(--bg-color)" style={{fontWeight: 'bold'}}>
+                $75
+              </Typography>
+            </div>
+          </>
+        }
+        header={
+          <>
+            Mathew Nathan, South Africa
+            <div style={{ marginTop: "8px" }}>
+              {/* Display the price */}
+              <Typography variant="body2" color="text.secondary">
+                $75
+              </Typography>
+            </div>
+          </>
+        }
       />
+
       <div className="m-0">
         <CardContent sx={{ marginTop: 0, marginBottom: 0 }}>
           <Typography variant="body2" color="text.secondary">

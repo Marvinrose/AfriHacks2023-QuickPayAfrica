@@ -44,20 +44,16 @@ export default function Footer() {
             </p>
             <div>
               <FontAwesomeIcon
-                style={{ paddingRight: "10px" }}
+                style={{ paddingRight: "13px" }}
                 icon={faApple}
                 size="2x"
               />
               <FontAwesomeIcon
-                style={{ paddingRight: "10px" }}
+                style={{ paddingRight: "13px" }}
                 icon={faTwitter}
                 size="2x"
               />
-              <FontAwesomeIcon
-                style={{ paddingRight: "10px" }}
-                icon={faGoogle}
-                size="2x"
-              />
+              <FontAwesomeIcon icon={faGoogle} size="2x" />
             </div>
           </div>
         </div>

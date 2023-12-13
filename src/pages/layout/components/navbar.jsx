@@ -11,10 +11,12 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
+// import AdbIcon from "@mui/icons-material/Adb";
 import SearchIcon from "@mui/icons-material/Search";
 import { styled, alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
+import { Link } from "react-router-dom";
+import LOGO from "./images/Afrilogo.png";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -81,10 +83,15 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="fixed" style={{ backgroundColor: "var(--bg-color)" }}>
+    <AppBar
+      className="p-2"
+      position="fixed"
+      style={{ backgroundColor: "var(--bg-color)" }}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+          {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
+          <img className="img-fluid " src={LOGO} alt="" width={30} />{" "}
           <Typography
             variant="h6"
             noWrap
@@ -100,10 +107,13 @@ function ResponsiveAppBar() {
               textDecoration: "none",
             }}
           >
-            {/* <img className="img-fluid " src={LOGO} alt="" width={30} />{" "} */}
-            <span style={{ fontFamily: "Montserrat" }}>QuickPayAfrica</span>
+            <Link
+              to="/"
+              style={{ color: "var(--white)", textDecoration: "none" }}
+            >
+              <span style={{ fontFamily: "Montserrat" }}>QuickPayAfrica</span>
+            </Link>
           </Typography>
-
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -140,7 +150,7 @@ function ResponsiveAppBar() {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+          <img className="img-fluid " src={LOGO} alt="" width={30} />{" "}
           <Typography
             variant="h5"
             noWrap
@@ -157,7 +167,12 @@ function ResponsiveAppBar() {
               textDecoration: "none",
             }}
           >
-            LOGO
+            <Link
+              to="/"
+              style={{ color: "var(--white)", textDecoration: "none" }}
+            >
+              <span style={{ fontFamily: "Montserrat" }}>QuickPayAfrica</span>
+            </Link>
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
@@ -181,7 +196,6 @@ function ResponsiveAppBar() {
               />
             </Search>
           </Box>
-
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
