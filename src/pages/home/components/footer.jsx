@@ -1,3 +1,8 @@
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { Apple } from "./icons.jsx/apple-icon";
+// import { Apple } from "../icons/faApple";
+import { faApple } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import * as React from "react";
 
 export default function Footer() {
@@ -30,7 +35,10 @@ export default function Footer() {
           </div>
           <div className="col-3">
             <h2>QUICKPAYAFRICA</h2>
-            <p className="mt-3">Share what is new and life moments with your friends</p>
+            <p className="mt-3">
+              Share what is new and life moments with your friends
+            </p>
+            <FontAwesomeIcon icon={faApple} />
           </div>
         </div>
       </div>

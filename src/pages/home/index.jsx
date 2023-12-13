@@ -7,6 +7,8 @@ import BasicCard from "./components/descCard";
 import Footer from "./components/footer";
 import MyComponent from "../icons/right-arrow";
 import { Link } from "react-router-dom";
+import Features from "./components/features";
+import heroImg2 from "./components/images/hero-img2.png";
 
 const Home = () => {
   return (
@@ -102,10 +104,45 @@ const Home = () => {
         >
           <GroupAvatars style={{ maxWidth: "100%", height: "auto" }} />
         </div>
-        <div className="mt-5" style={{ display: "flex", justifyContent: "center" }}>
+        <div
+          className="mt-5"
+          style={{ display: "flex", justifyContent: "center" }}
+        >
           <BasicCard style={{ maxWidth: "600px" }} />
         </div>
       </div>{" "}
+      <Features />
+      <div className="text-center mt-5">
+        <img
+          src={heroImg2}
+          alt=""
+          style={{ width: "400px", borderRadius: "8px" }}
+        />
+      </div>
+      <div className="text-center mt-4">
+        <h2 className="mb-0" style={{ fontSize: "30px" }}>
+          "No counterfeit transactions. Secure authentic purchases through our
+          marketplaces."
+        </h2>
+        <p style={{ fontSize: "18px" }}>
+          At QuickpayAfrica, we believe in quality over quantity.
+        </p>
+        <Button
+          variant="outlined"
+          style={{
+            marginRight: "50px",
+            backgroundColor: "var( --primary-color)",
+            border: "3px solid var(--bg-color)",
+            color: "var(--bg-color)",
+            padding: "12px 40px ",
+            fontWeight: "bold",
+            fontSize: "18px",
+            borderRadius: "14px",
+          }}
+        >
+          Learn more
+        </Button>
+      </div>
       <Footer />
     </>
   );
