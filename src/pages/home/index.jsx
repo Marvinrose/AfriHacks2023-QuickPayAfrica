@@ -9,7 +9,7 @@ import MyComponent from "../icons/right-arrow";
 import { Link } from "react-router-dom";
 import Features from "./components/features";
 import heroImg2 from "./components/images/hero-img2.png";
-
+import heroImg3 from "./components/images/partner-img.png";
 const Home = () => {
   return (
     <>
@@ -141,6 +141,31 @@ const Home = () => {
           }}
         >
           Learn more
+        </Button>
+      </div>
+      <div className="text-center mt-5">
+        <img
+          src={heroImg3}
+          alt=""
+          style={{ width: "400px", borderRadius: "8px" }}
+        />
+        <h2 className="mb-3 mt-4" style={{ fontSize: "30px" }}>
+          How to become a partner
+        </h2>
+        <Button
+          variant="outlined"
+          style={{
+            marginRight: "50px",
+            backgroundColor: "var( --primary-color)",
+            border: "3px solid var(--bg-color)",
+            color: "var(--bg-color)",
+            padding: "12px 40px ",
+            fontWeight: "bold",
+            fontSize: "18px",
+            borderRadius: "14px",
+          }}
+        >
+          See video
         </Button>
       </div>
       <Footer />

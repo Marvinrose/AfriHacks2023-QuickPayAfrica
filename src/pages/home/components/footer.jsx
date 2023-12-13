@@ -1,7 +1,11 @@
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { Apple } from "./icons.jsx/apple-icon";
 // import { Apple } from "../icons/faApple";
-import { faApple } from "@fortawesome/free-brands-svg-icons";
+import {
+  faApple,
+  faGoogle,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import * as React from "react";
 
@@ -38,7 +42,23 @@ export default function Footer() {
             <p className="mt-3">
               Share what is new and life moments with your friends
             </p>
-            <FontAwesomeIcon icon={faApple} />
+            <div>
+              <FontAwesomeIcon
+                style={{ paddingRight: "10px" }}
+                icon={faApple}
+                size="2x"
+              />
+              <FontAwesomeIcon
+                style={{ paddingRight: "10px" }}
+                icon={faTwitter}
+                size="2x"
+              />
+              <FontAwesomeIcon
+                style={{ paddingRight: "10px" }}
+                icon={faGoogle}
+                size="2x"
+              />
+            </div>
           </div>
         </div>
       </div>
