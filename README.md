@@ -1,6 +1,6 @@
 # QUICKPAYAFRICA README
 
-QuickPayAfrica QuickPayAfrica is an intuitive web app that connects African artisans with clients/customers thereby empowering small businesses and individuals in emerging economies and easily accept digital payments.
+QuickPayAfrica is an intuitive web app that connects African artisans with clients/customers thereby empowering small businesses and individuals in emerging economies and easily accept digital payments.
 
 ## How do I get set up?
 
