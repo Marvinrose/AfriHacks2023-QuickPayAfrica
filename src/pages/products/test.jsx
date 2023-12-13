@@ -1,10 +1,13 @@
+import Footer from "../home/components/footer";
 import Layout from "../layout";
 import CustomArrows from "./components/slider";
 
 const Test = () => {
   return (
-    <Layout>
-      <div className="container mt-5 ">
+    <>
+      {" "}
+      <Layout />
+      <div className="container mt-5 " style={{ marginTop: "500px" }}>
         <div className="mb-5">
           {" "}
           <h1 className="mb-4">Paintings</h1>
@@ -19,7 +22,8 @@ const Test = () => {
           <CustomArrows />
         </div>
       </div>
-    </Layout>
+      <Footer />
+    </>
   );
 };
 
