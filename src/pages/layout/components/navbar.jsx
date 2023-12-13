@@ -100,7 +100,8 @@ function ResponsiveAppBar() {
               textDecoration: "none",
             }}
           >
-            LOGO
+            {/* <img className="img-fluid " src={LOGO} alt="" width={30} />{" "} */}
+            <span style={{ fontFamily: "Montserrat" }}>QuickPayAfrica</span>
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>

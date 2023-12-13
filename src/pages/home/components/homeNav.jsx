@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
-import LOGO from "./images/Afrilogo.png";
+// import LOGO from "./images/Afrilogo.png";
 
 export default function ButtonAppBar() {
   return (
@@ -28,7 +28,7 @@ export default function ButtonAppBar() {
           </IconButton>
 
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            <img className="img-fluid " src={LOGO} alt="" width={30} />{" "}
+            {/* <img className="img-fluid " src={LOGO} alt="" width={30} />{" "} */}
             <span style={{ fontFamily: "Montserrat" }}>QuickPayAfrica</span>
           </Typography>
           <Button style={{ fontFamily: " var(--font-famiy)" }} color="inherit">
